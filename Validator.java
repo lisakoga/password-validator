@@ -3,7 +3,7 @@ public class Validator
     public static boolean pwCheck(String pw)
     {
         // checks if the password is not “password” (case insensitive)
-        if (pw.toLowerCase() == "password")
+        if (pw.toLowerCase().equals("password"))
         {
             return false;
         }
